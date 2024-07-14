@@ -1,9 +1,12 @@
 FROM alpine:edge
 
-ARG AUUID="b476a0f7-d8ed-4d67-ac7e-f2c7e962625f"
+ARG AUUID="e75e3c23-c962-4bd3-bec0-1c72462305ee"
+
 ARG CADDYIndexPage="https://github.com/happyevero/Html/raw/main/L-html.zip"
+
 ARG ParameterSSENCYPT="chacha20-ietf-poly1305"
-ARG PORT=8080
+
+ARG PORT=8000
 
 ADD etc/Caddyfile /tmp/Caddyfile
 ADD etc/xray.json /tmp/xray.json
